@@ -17,5 +17,14 @@ namespace BackEnd.Controllers
 		{
 			return 1;
 		}
+
+		[HttpGet]
+		[Route("[action]")]
+		public dynamic GetDynamic()
+		{
+			dynamic value;
+			value = 1;
+			return value;
+		}
 	}
 }
