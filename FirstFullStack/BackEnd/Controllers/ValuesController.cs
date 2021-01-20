@@ -27,12 +27,20 @@ namespace BackEnd.Controllers
 			return value;
 		}
 
-
 		[HttpGet]
 		[Route("[action]")]
 		public dynamic GetStringWithDynamic()
 		{
 			dynamic value;
+			value = "abc";
+			return value;
+		}
+
+		[HttpGet]
+		[Route("[action]")]
+		public string GetString()
+		{
+			string value;
 			value = "abc";
 			return value;
 		}
