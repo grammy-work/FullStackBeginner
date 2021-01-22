@@ -44,5 +44,23 @@ namespace BackEnd.Controllers
 			value = "abc";
 			return value;
 		}
+
+		[HttpGet]
+		[Route("[action]")]
+		public int GetInteger()
+		{
+			int valueInteger;
+			valueInteger = 54; // 一副扑克牌的数目
+			return valueInteger;
+		}
+
+		[HttpGet]
+		[Route("[action]")]
+		public decimal GetDecimal()
+		{
+			decimal valueDecimal;
+			valueDecimal = 8848.86m; // 珠穆朗玛峰的最新海拔
+			return valueDecimal;
+		}
 	}
 }
